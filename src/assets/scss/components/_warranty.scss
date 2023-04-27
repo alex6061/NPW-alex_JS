@@ -1,0 +1,19 @@
+.warranty__title{}
+
+.warranty__wrapper{
+    
+    @media screen and (min-width: 768px) {
+        .warranty__body {
+            order: 1;
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
+        
+}
+
+.warranty__text{
+    margin-bottom: 10px;
+}
+
+.warranty__image{}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <title>npw-project</title>
+</head>
+
+<body class="heading">
+    <!----- header ----->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                
+                <!-- ==logo== -->
+                <a href="index.html" class="header__logo__link">
+                    <svg class="header__logo">
+                        <use href="./assets/img/brands/symbol-defs.svg#icon-header__logo"></use> 
+                    </svg>
+                </a>
+                <!-- ==header__menu== -->
+                <ul class="header__menu">
+                    <li class="header__item"><a class="header__link" href="">Download</a></li>
+                    <li class="header__item"><a class="header__link" href="">Warranty</a></li>
+                    <li class="header__item"><a class="header__link" href="">Care</a></li>
+                    <li class="header__item"><a class="header__link" href="">Cashback</a></li>
+                    <li class="header__item"><a class="header__link" href="">Clients</a></li>
+                </ul>
+                <nav class="header__nav">
+                    <!-- ==header__lang== -->
+                    <div class="header__lang"></div>
+                    <!-- ==header__theme== -->
+                    <select  id="header__select">
+                        <option value="">EN</option>
+                        <option value="">RU</option>
+                    </select>
+                    <!-- ===theme=== -->
+                     <button id="theme">
+                        <svg class="header__moon click"  onclick="changeBodyBg('#484848')">
+                            <use href="./assets/img/brands/symbol-defs.svg#icon-moon"></use> 
+                       </svg>
+                    </button>
+                    <!-- ===================================== -->
+                    <div class="header__burger" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ===main=== -->
+    <main class="main">
+        <!-- ===download=== -->
+        <section class="download section">
+            <div class="container">
+                <!-- ===download___wrapper=== -->
+                <div class="download__wrapper section__wrapper">
+                    <!-- ===download___inner=== -->
+                    <div class="download__inner">
+                        <h1 class="download__title">Peaceful shopping mindful money</h1>
+                        <p class="download__text text">See how we can help with making your shopping experience and money management more ZEN.</p>
+                            <ul class="download__list">
+                                <li class="download__item">
+                                    <a class="download__link" href="">
+                                        <img class="link__apple" src="./assets/img/apple.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="download__item">
+                                    <a class="download__link" href="">
+                                        <img class="link__google" src="./assets/img/google.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="img__box">
+                        <img class="download__image image" src="./assets/img/image.png" width="290" alt="download__image">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- ===warranty=== -->
+        <section class="warranty section">
+            <div class="container">
+                <div class="warranty__wrapper section__wrapper">
+                    <div class="warranty__body">
+                        <h2 class="warranty__title title">1-year warranty boost</h2>
+                        <p class="warranty__text text">ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.</p>
+                        <p class="warranty__text text">When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.</p>    
+                    </div>
+                    <div class="img__box">
+                        <img class="warranty__image image" src="./assets/img/image-1.png" width="290" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===care=== -->
+        <section class="care section">
+            <div class="container">
+                <div class="care__wrapper section__wrapper">
+                    <div class="care__inner">
+                        <h3 class="care__title title">ZEN Care</h3>
+                        <p class="care__text text">Shopping online is usually a delightful experience. Until it's not.</p>
+                        <p class="care__text text">Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.</p>
+                        <p class="care__text text">But, here comes ZEN Care: a free, built-in shopping protection.</p>
+                    </div>
+                    <div class="img__box">
+                        <img class="care__image image" src="./assets/img/image-2.png" width="290" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===cashback=== -->
+        <section class="cashback section">
+            <div class="container">
+                <div class="cashback__wrapper section__wrapper">
+                    <div class="cashback__inner">
+                        <h4 class="cashback__title title">and cashback!</h4>
+                        <p class="cashback__text text">It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it.</p>
+                        <p class="cashback__text text">We gave it a thought and made cashback way more friendly.</p>
+                        <p class="cashback__text text">Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase.</p> 
+                    </div>
+                    <div class="cashback__box">
+                        <button id="show-modal" data-title="Скачать" class="cashback__button">Order a consultation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===clients=== -->
+        <section class="clients section">
+            <div class="container">
+                    <h5 class="clients__title title">Title</h5>
+
+                        <div class="clients__wrapper">
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-1"></use>
+                            </svg>
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-2"></use>
+                            </svg>
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-3"></use>
+                            </svg>
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-4"></use>
+                            </svg>
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-5"></use>
+                            </svg>
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-6"></use>
+                            </svg>
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-7"></use>
+                            </svg>
+                            <svg class="clients__item">
+                                <use href="./assets/img/brands/symbol-defs.svg#icon-8"></use>
+                            </svg>
+                        </div>    
+                </div>
+        </section>
+    </main>
+    <!-- ====modal=== -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+            <div class="modal__wrapper">
+                <div class="modal__inner">
+                    <h6 class="modal__title">Order a consultation</h6>
+                    <form  class="modal__form" >
+                        <input class="form__name" type="text" placeholder="Name">
+                        <input class="form__tel" type="number" placeholder="Tel.">
+                        <input class="form__email" type="email" placeholder="E-mail">
+                            <select id="Connection">
+                                <option value="Phone">Phone</option>
+                                <option value="Email">Email</option>
+                                <option value="WhatsUp">WhatsUp</option>
+                                <option value="Telegram">Telegram</option>
+                            </select>
+                        <div class="modal__box">
+                            <input type="checkbox" checked>
+                            <a href="#" class="modal__link">Privacy policy</a>
+                        </div>  
+                    </form>
+                    <!-- ====================button_modal====================== -->
+                    <button data-modal-open class="button__modal" type="button">Submit </button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- ===footer=== -->
+    <footer class="footer section">
+        <div class="container">
+            <!-- ==footer__wrapper== -->
+            <div class="footer__wrapper">
+                <!-- ==footer__columns== -->
+                <div class="footer__columns">
+                    <div class="footer__card">
+                        <h5 class="footer__title">Learn</h5>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="" class="footer__item__link">Help center</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Join ZEN team</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Privacy Policy</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Cookies</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Terms of use</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__card">
+                        <h5 class="footer__title">Discover</h5>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="" class="footer__item__link">For developers</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Apple Pay</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Google Pay</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__card">
+                        <h5 class="footer__title">Offer</h5>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="" class="footer__item__link">Business</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Personal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__card">
+                        <h5 class="footer__title">Language</h5>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="" class="footer__item__link">English</a></li>
+                            <li class="footer__item"><a href="" class="footer__item__link">Polish</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__card">
+                        <h5 class="footer__title">Follow us</h5>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item__link">
+                                    <svg class="footer__in">
+                                        <use href="./assets/img/brands/symbol-defs.svg#icon-footer__in"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                    <div class="footer__card">
+                        <h5 class="footer__title">Contact</h5>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="mailto:hello@zen.com" class="footer__item__link">hello@zen.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ==footer__info== -->
+                <div class="footer__info">
+                    <!-- ==footer__info__logo== -->
+                    <svg class="footer__info__logo">
+                        <use href="./assets/img/brands/symbol-defs.svg#icon-footer-logo"></use>
+                    </svg>  
+                    <!-- ==footer__info__wrapper== -->
+                    <div class="footer__info__wrapper">
+                        <p class="footer__info__text">ZEN is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.</p>
+                        <p class="footer__info__text">Registration number of the company 304749651, VAT ID LT100011714916.</p>
+                        <p class="footer__info__text">License of electronic money institutions number LB000457.</p>
+                        <p class="footer__info__text">Share capital 2.185.000,00 EUR.</p>
+                        <p class="footer__info__text">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
+                        <p class="footer__info__text">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
+                    </div>
+                </div>
+                <svg class="footer__copyright">
+                    <use href="./assets/img/brands/symbol-defs.svg#icon-copyright"></use>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+                        <div class="" id="root">
+                            <h1 class="title"></h1>
+                        </div>
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+                    <!-- =====learn==== -->
+
+        <!----- =====script=====----->
+        <script type="module" src="./index.js" ></script>
+    
+</body>
+</html>

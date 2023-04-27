@@ -1,0 +1,62 @@
+.cashback__title{
+     @media screen and (min-width:768px) {
+        text-align: center;
+    }
+}
+
+.cashback__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        max-width: 460px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        max-width: 550px;
+        text-align: center;
+    }
+}
+
+.cashback__text{
+    margin-bottom: 10px;    
+}
+
+.cashback__button{
+    font-size: 16px;
+    line-height: 22px;
+
+    padding: 14px 72px;
+    border: 1px solid #AAAAAA;
+    border-radius: 30px;
+    background: #ffff;
+
+    position: relative;
+    z-index: 3;
+
+}
+
+
+
+    .cashback__button:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #484848;
+        border-radius: 30px;
+        transition: 1200ms;
+        z-index: 2;
+        color: white;
+    }
+
+
+    .cashback__button:hover:before {
+        width: 100%;
+        z-index: 1;
+        color: white;
+    }
